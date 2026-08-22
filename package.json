@@ -1,8 +1,7 @@
 {
-  "homepage": "https://cs409-fa25.github.io/mp0",
   "name": "mp0",
   "version": "1.0.0",
-  "description": "CS498RK MP0",
+  "description": "CS409 MP0",
   "scripts": {
     "build": "webpack --mode production",
     "clean": "rm -rf build",

@@ -1,5 +1,5 @@
 # MP 0: The Basics
-### Due: Tuesday, Sep 9, 11:59PM
+### Due: Tuesday, Sep 8, 2026, 11:59PM CT
 
 ## Table of Contents
 1. [Assignment](#assignment)
@@ -20,18 +20,19 @@ This assignment designed to help you set up your development environment. You wi
 5. The image should have a height and width of 150px.
 
 #### Optional
-If you'd like to get some hands-on experience with Javascript before the next MP, you may attempt to recreate [this example](https://cs409-fa25.github.io/fa-25/images/mp0.gif). Although this will not be graded, understanding this early-on will make your life significantly easier for the next MP! :)
+If you'd like to get some hands-on experience with Javascript before the next MP, you may attempt to recreate [this example](https://cs409-fa25.github.io/fa-26/images/mp0.gif). Although this will not be graded, understanding this early-on will make your life significantly easier for the next MP! :)
 
 To get started, follow the [environment setup](#environment-setup).
 
 ## Environment Setup
 1. Make sure you have [Node.js](https://nodejs.org/en/) and [git](https://git-scm.com/) installed.
 2. Create an account on [GitHub](https://github.com/).
-3. Clone this repository:
-`git clone https://github.com/cs409-fa25/mp0` or `git@github.com:cs409-fa25/mp0.git`, then `cd mp0`
-4. Install dependencies:
+3. Create your own copy of this repository: on the [class repo](https://github.com/cs409-fa25/mp0), click **Use this template** > **Create a new repository**. Name it `mp0` and make it **public** (GitHub Pages requires a public repo on a free account).
+4. Clone the repository you just created:
+`git clone git@github.com:<your-github-username>/mp0.git`, then `cd mp0`
+5. Install dependencies:
 `npm install`
-5. Start the dev server:
+6. Start the dev server:
 `npm start`
 
 If the web browser does not open automatically, go to `http://localhost:8080/` to view your page. Note that if for some reason your port 8080 is occupied, it will default to 8081. If you can see "Hello World!", then you are all set!
@@ -41,19 +42,15 @@ You should now be able to edit the files in the `src` folder and see the changes
 You will need to submit your code as a GitHub repository and deploy it as a website. The steps below will guide you on how to do it.
 
 #### Set Up a Github Repository
-You will need to create a GitHub repo and make us collaborators.
-1. [Create a public repository on GitHub.](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository) Make sure "Initialize this repository with a README" is **not** checked.
-2. Change the remote url for your local mp0 directory to the url of the new public repository you created.
-```
-git remote rename origin old-origin
-git remote add origin git@github.com:<your-github-username>/mp0.git
-# run `git remote -v` to check your origin 
-```
+You created your repository from the template above, so `origin` already points at
+it and no remote changes are needed. Confirm with `git remote -v`.
+
+You will need to add the course staff as collaborators so we can grade your work.
 
 ### Deploying the MP
 In order for us to view and grade your MP, you will be deploying your webpage with GitHub's pipelines. This should happen automatically after pushing to your repository, through Github Actions deployment pipeline.
 
-You will need to do some additional to properly deploy the website. There are a few settings you will need to change in your GitHub repository.
+You will need to do some additional work to properly deploy the website. There are a few settings you will need to change in your GitHub repository.
 1. Set GitHub Pages Deployment Source to Github Actions
    - In your Github repo, go to Settings > Pages > Build and Deployment > Source > Select "GitHub Actions"
 <!-- 3. Set GitHub Pages Visibility to **public**, otherwise your deployed url will be randomized. -->
@@ -84,7 +81,7 @@ This assignment is worth 5% of your final grade. Breakdown is as follows:
 - If you think something you’re doing might not be acceptable, please ask on Piazza.
 
 ## Submission Details
-After you have completed the assignment and have a deployed website, fill out and submit the form [here](https://docs.google.com/forms/d/e/1FAIpQLSdZfmF6IsyH2hKBegp9voMGalZYFHnALKMQAVg_p7OTA4EILg/viewform?usp=sharing&ouid=103731398038409469401).
+After you have completed the assignment and have a deployed website, fill out and submit the [course submission form](https://forms.gle/Gk1BxfsZ5K7sZpZZ6).
 
 ## Large Language Model (LLM) Usage Policy
 
